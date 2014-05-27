@@ -68,4 +68,11 @@ Because of all the above, the plug-in will make the generation process
 this plug-in in ``publishconf.py``.
 
 
+Credits
+=======
+This plug-in started off as modifications to the ``related_posts`` plug-in
+available on `Pelican's Plugin Repository`_, and diverged enough for me to
+release it as an independent plug-in.
+
 .. _Pelican: https://github.com/getpelican/pelican
+.. _`Pelican's Plugin Repository`: https://github.com/getpelican/pelican-plugins
