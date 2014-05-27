@@ -55,4 +55,17 @@ Example:
                                    'min_score':            0.1}
 
 
+Notes
+=====
+The recommender will parse the content of all articles, pass the plain text
+(ignoring code and math blocks, for example) to an NLTK tokenizer, and then
+vectorizes all the articles using scikit-learn's TFIDF vectorizer. Finally, a
+similarity score is calculated based on cosine similarity.
+
+
+Because of all the above, the plug-in will make the generation process
+*significantly* slower. Please keep this in mind. You might want to only enable
+this plug-in in ``publishconf.py``.
+
+
 .. _Pelican: https://github.com/getpelican/pelican
