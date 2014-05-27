@@ -1,6 +1,6 @@
 """
-Related posts plug-in that uses the content of the posts to determine post
-similarity. Use scikit-learn, and nltk.
+Article recommender plug-in that uses the content of the posts to determine
+post similarity. Uses scikit-learn, and nltk.
 """
 from __future__ import unicode_literals
 from __future__ import print_function
@@ -86,11 +86,11 @@ def add_recommended_articles(generator):
                                         for i, score
                                         in recommended_indices]
 
-        print(recommended_indices)
-        similar_articles = '\n'.join('- ' + r.title
-                                     for r in article.recommended_articles)
-        print('{} is similar to:\n{}\n'.format(article.title,
-                                               similar_articles))
+        # print(recommended_indices)
+        # similar_articles = '\n'.join('- ' + r.title
+        #                              for r in article.recommended_articles)
+        # print('{} is similar to:\n{}\n'.format(article.title,
+        #                                        similar_articles))
 
 
 def register():
