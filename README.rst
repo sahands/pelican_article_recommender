@@ -16,8 +16,8 @@ When the plug-in is activated, you can use ``article.recommended_articles``
 list to get a list of recommended articles. You can then use this inside your
 templates. For example:
 
-.. code:: 
-    :lexer: jinja2
+.. code-block:: 
+    :lexer: jinja
 
     {% if article.recommended_articles %}
         <div class="related-posts">
@@ -50,7 +50,7 @@ settings file. Currently the following two keys from this dictionary are used:
 Example:
 
 
-.. code::
+.. code-block::
     :lexer: python
 
     ARTICLE_RECOMMENDER_OPTIONS = {'max_recommendations':  5,
