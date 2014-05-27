@@ -1,7 +1,7 @@
 Pelican Article Recommender
 ===========================
 
-Article recommendation system for pelican based on post similarity calculated
+Article recommendation system for Pelican_ based on post similarity calculated
 using NLTK and scikit-learn's TFIDF vectorizer.
 
 Requirements
@@ -39,5 +39,22 @@ templates. For example:
     {% endif %}
 
 
+Options
+=======
+A dictionary ``ARTICLE_RECOMMENDER_OPTIONS`` can be defined in Pelican's
+settings file. Currently the following two keys from this dictionary are used:
+
+- ``max_recommendations`` (default = 5): the maximum number of articles recommended.
+- ``min_score`` (default = 0.05): minimum score to be included as a recommendation. Value must be between 0 and 1.
+
+Example:
 
 
+.. code::
+    :lexer: python
+
+    ARTICLE_RECOMMENDER_OPTIONS = {'max_recommendations':  5,
+                                   'min_score':            0.1}
+
+
+.. _Pelican: https://github.com/getpelican/pelican
