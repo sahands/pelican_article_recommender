@@ -1,1 +1,1 @@
-from article_recommender import *
+from .article_recommender import *
